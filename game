@@ -1,0 +1,19 @@
+import random
+heath= 1000
+playerName = (input("What's your name? >"))
+print()
+print ("start game.....")
+print()
+print ("There was a dangerous beast that roam the land it once destroyed everything on the land it killed your parents, your village, everything the monster is call bahamut\n")
+print ("You left your home town and the leader of your village said that you must go to the royal palace to fight the bahamut and obtain the excalibur. The village leader then gives you a weapon the WOODEN STICK!!! You now set your journey insearch of the excalibur\n")
+sit1 = (input("you walk and see two sighs one sigh says right one sign says left which way will you go >"))
+while True:
+  
+  if sit1 == "left":
+   print ("you then go left and stumble apound a monster ")
+   
+  elif sit1 == ("right"):
+    print ("you go right")
+  else:
+    print ("there was an error the game crash you died try again")
+    break
