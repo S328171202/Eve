@@ -1,101 +1,705 @@
-import time 
+import time
 
 playerName = (input("What's your name? >"))
 print()
-print ("start game.....")
-print()
-print ("There was a dangerous beast that roam the land it once destroyed everything on the land it killed your parents, your village, everything the monster is call bahamut\n")
-print ("You left your home town and the leader of your village said that you must go to the royal palace to fight the bahamut and obtain the excalibur. The village leader then gives you a weapon the WOODEN STICK!!! You now set your journey insearch of the excalibur\n")
-sit1 = (input("you walk and see two sighs one sigh says right one sign says left which way will you go >"))
+print("start game.....\n")
+print(
+    "There was a dangerous beast that roam the land it once destroyed everything on the land it killed your parents, your village, everything the monster is call bahamut\n\nYou left your home town and the leader of your village said that you must go to the royal palace to fight the bahamut and obtain the excalibur. The village leader then gives you a weapon the WOODEN STICK!!! You now set your journey insearch of the excalibur\n"
+)
+sit1 = (input(
+    "you walk and see two sighs one sigh says right one sign says left which way will you go >"
+))
 while True:
-  
-  if sit1 == "left":
-   print ("you then go left and stumble apound a monster ")
-#add monster fight   
-  elif sit1 == ("right"):
-    print ("you go right")
-    print ("You come across a shortcut that will take you to a town.")
-    sit2 = (input("are you going to take it y/n"))
-    if sit2== "y":
-      print ("a very strong monster appear")
-#add monster fight   
-      print ("You get to the town and find healer that heals you, you get healed and have the opportunity to learn a healing spell")
-      sit3 =(input("will you take it y/n"))
-    elif sit2=="n":
-      print ("a wizard teleported you to a graveyard")
-      print ("AHHH ZOMBIES")
-#add monster fight
-      print ("You get to the town and find healer that heals you, you get healed and have the opportunity to learn a healing spell")
-      sit3 =(input("will you take it y/n"))
-      if sit3=="y":
-        print ("please go to the forest to defeat the evil monster")
-      elif sit3=="n":
-        print ("the wizard begs but you said no you went out of the village but then heard people sceaming in the back in agony of some terrible monster that ate everyone in the town")
-        print ("You go to dark cave. The cave has a lot of goblins.\nAHHHH!! the goblins are chasing you")
-#add monster fight
-        sit4 = (input("you leave the cave all safe then a merchant comes and tell you that he has The SILVER STICK!! he is willing to sell it for you will you take it y/n "))
-        if sit4 == "y":
-          print ("you take the stick an go with you life")
-          print ("There is a big rock that fell")
-          print ("you then run to the giant rock. it was a metiorite")
-          sit5 = (input("will you pick it up y/n"))
-          if sit5 == "y":
-            print ("you pick up the meteorite and the merchant sees you with the rock he tells you that he will give you the real silver stick for it")
-            sit5b= (input("will you give it to him y/n"))
-            if sit5b == "y":
-              print  ("you take the silver stick and then go to the next village over")
-          elif sit5 == "n":
-            print ("you dont pick up the rock so you left it you then hear someone yell for hlpe you run back to where the rock was.")
-            print ("you saw the merchant but it was to late he was eaten by this unknown being")
-            print ("he then attacks you")
-#add monster fight
-            print ("you have obtain the real silver stick then you went to the next village over")
-            print ("a wizard was there willing to teach anyone how to use a attack magic")
-            sit6= (input("do you want to learn it y/n"))
-            if sit6 =="y":
-              print ("it took you a while put you did it you have learned how to ")
-              print ("you then went back to your avanture")
-              print ("but you then heard someone yell for help")
-              print ("you run to there rescue and use your new atack magic to save them")
-              print ("After you save them they gave you a thank you gift the GOLDEN STICK!!!")
-              print ("you then resume back to your aventure and get to the royal city")
-              print ("you have made it to the royal city but a giant dragon has fly over the city trying to destroy it")
-              print ("the dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground")
-              print ("everyone is yelling for a hero to help defeat the dragon")
-              sit7 =(input("will you help y/n"))
-              if sit7== "y":
-                print ("you go fight the evil dragon")
-#add monster fight
-                print ("you have defeated the dragon")
-                print (" the dragon body falls onto the legendary stick it came out of the ground you then take the stick")
-                print ("you have obtain the LEGENDARY STICK!!!")
-                print ("everyone cheers and the king has come to thank you")
-                print ("you have earn a medel ")
-                sit8 (input("but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"))
-                if sit8 = "y":
-                  print ("the king says thank you and bless you good well and hopes for you to defeat the bahamut")
-                  print ("you set on an aventure to find this bahamut with a large army")
-                  print ("you have made it to bahamut layer")
-                  print ("THE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT")
-                elif sit8 = "n":
-                  print ("you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you thne heard that the bahamut")
-#add monster fight
-                  print ("you have defeated the bahamut and the world is saved")
-              elif sit7== "n":
-                print ("You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.")
-                print ("Good job hero you saved no one you will be known as a useless hero")
-                break
-              
-            elif sit6 =="n":
-              print ("you then went back to your avanture")
-              print ("but you then heard someone yell for help")
-              print ("you run and try to save them but was not able it was to late")
-              print ("you then went back to your aventure but regret not learning the spell to save them")
-        elif sit4 == "n":
-          print ("you dont take the stick then go on with your life")
-    else:
-      print ("you type some weird error cause the world to be corrupted you died due to unknown causes")
-      break
-  else:
-    print ("there was an error the game crash you died try again")
-    break
+
+	if sit1 == "left":
+		print("you then go left and stumble apound a monster ")
+		#add monster fight
+		print("You come across a shortcut that will take you to a town.")
+		sit2 = (input("are you going to take it y/n"))
+		if sit2 == "y":
+			print("a very strong monster appear")
+			#add monster fight
+			print(
+			    "You get to the town and find healer that heals you, you get healed and have the opportunity to learn a healing spell"
+			)
+			sit3 = (input("will you take it y/n"))
+		elif sit2 == "n":
+			print("a wizard teleported you to a graveyard\nAHHH ZOMBIES")
+			#add monster fight
+			print(
+			    "You get to the town and find healer that heals you, you get healed and have the opportunity to learn a healing spell"
+			)
+			sit3 = (input("will you take it y/n"))
+			if sit3 == "y":
+				print("please go to the forest to defeat the evil monster")
+			elif sit3 == "n":
+				print(
+				    "the wizard begs but you said no you went out of the village but then heard people sceaming in the back in agony of some terrible monster that ate everyone in the town\nYou go to dark cave. The cave has a lot of goblins.\nAHHHH!! the goblins are chasing you"
+				)
+				#add monster fight
+				sit4 = (input(
+				    "you leave the cave all safe then a merchant comes and tell you that he has The SILVER STICK!! he is willing to sell it for you will you take it y/n "
+				))
+				if sit4 == "y":
+					print(
+					    "you take the stick an go with you life\nThere is a big rock that fell\nyou then run to the giant rock. it was a metiorite"
+					)
+					sit5 = (input("will you pick it up y/n"))
+					if sit5 == "y":
+						print(
+						    "you pick up the meteorite and the merchant sees you with the rock he tells you that he will give you the real silver stick for it"
+						)
+						sit5b = (input("will you give it to him y/n"))
+						if sit5b == "y":
+							print(
+							    "you take the silver stick and then go to the next village over\na wizard was there willing to teach anyone how to use a attack magic"
+							)
+						sit6 = (input("do you want to learn it y/n"))
+						if sit6 == "y":
+							print(
+							    "it took you a while put you did it you have learned how to\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+						elif sit6 == "n":
+							print(
+							    "you then went back to your avanture\nbut you then heard someone yell for help\nyou run and try to save them but was not able it was to late\nyou then went back to your aventure but regret not learning the spell to save them\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+						elif sit5b == "n":
+							print(
+							    "you did not take it you then died from the dragon because you had no stronge enough weapon to move on"
+							)
+					elif sit5 == "n":
+						print(
+						    "you dont pick up the rock so you left it you then hear someone yell for hlpe you run back to where the rock was.\nyou saw the merchant but it was to late he was eaten by this unknown being\nhe then attacks you"
+						)
+						#add monster fight
+						print(
+						    "you have obtain the real silver stick then you went to the next village over\na wizard was there willing to teach anyone how to use a attack magic"
+						)
+						sit6 = (input("do you want to learn it y/n"))
+						if sit6 == "y":
+							print(
+							    "it took you a while put you did it you have learned how to\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+						elif sit6 == "n":
+							print(
+							    "you then went back to your avanture\nbut you then heard someone yell for help\nyou run and try to save them but was not able it was to late\nyou then went back to your aventure but regret not learning the spell to save them\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+				elif sit4 == "n":
+					print("you dont take the stick then go on with your life")
+					print(
+					    "you take the stick an go with you life\nThere is a big rock that fell\nyou then run to the giant rock. it was a metiorite"
+					)
+					sit5 = (input("will you pick it up y/n"))
+					if sit5 == "y":
+						print(
+						    "you pick up the meteorite and the merchant sees you with the rock he tells you that he will give you the real silver stick for it"
+						)
+						sit5b = (input("will you give it to him y/n"))
+						if sit5b == "y":
+							print(
+							    "you take the silver stick and then go to the next village over\na wizard was there willing to teach anyone how to use a attack magic"
+							)
+						sit6 = (input("do you want to learn it y/n"))
+						if sit6 == "y":
+							print(
+							    "it took you a while put you did it you have learned how to\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+						elif sit6 == "n":
+							print(
+							    "you then went back to your avanture\nbut you then heard someone yell for help\nyou run and try to save them but was not able it was to late\nyou then went back to your aventure but regret not learning the spell to save them\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+						elif sit5b == "n":
+							print(
+							    "you did not take it you then died from the dragon because you had no stronge enough weapon to move on"
+							)
+					elif sit5 == "n":
+						print(
+						    "you dont pick up the rock so you left it you then hear someone yell for hlpe you run back to where the rock was.\nyou saw the merchant but it was to late he was eaten by this unknown being\nhe then attacks you"
+						)
+						#add monster fight
+						print(
+						    "you have obtain the real silver stick then you went to the next village over\na wizard was there willing to teach anyone how to use a attack magic"
+						)
+						sit6 = (input("do you want to learn it y/n"))
+						if sit6 == "y":
+							print(
+							    "it took you a while put you did it you have learned how to\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+						elif sit6 == "n":
+							print(
+							    "you then went back to your avanture\nbut you then heard someone yell for help\nyou run and try to save them but was not able it was to late\nyou then went back to your aventure but regret not learning the spell to save them\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+		else:
+			print(
+			    "you type some weird error cause the world to be corrupted you died due to unknown causes"
+			)
+			break
+	elif sit1 == ("right"):
+		print(
+		    "you go right\nYou come across a shortcut that will take you to a town."
+		)
+		sit2 = (input("are you going to take it y/n"))
+		if sit2 == "y":
+			print("a very strong monster appear")
+			#add monster fight
+			print(
+			    "You get to the town and find healer that heals you, you get healed and have the opportunity to learn a healing spell"
+			)
+			sit3 = (input("will you take it y/n"))
+		elif sit2 == "n":
+			print("a wizard teleported you to a graveyard\nAHHH ZOMBIES")
+			#add monster fight
+			print(
+			    "You get to the town and find healer that heals you, you get healed and have the opportunity to learn a healing spell"
+			)
+			sit3 = (input("will you take it y/n"))
+			if sit3 == "y":
+				print("please go to the forest to defeat the evil monster")
+			elif sit3 == "n":
+				print(
+				    "the wizard begs but you said no you went out of the village but then heard people sceaming in the back in agony of some terrible monster that ate everyone in the town\nYou go to dark cave. The cave has a lot of goblins.\nAHHHH!! the goblins are chasing you"
+				)
+				#add monster fight
+				sit4 = (input(
+				    "you leave the cave all safe then a merchant comes and tell you that he has The SILVER STICK!! he is willing to sell it for you will you take it y/n "
+				))
+				if sit4 == "y":
+					print(
+					    "you take the stick an go with you life\nThere is a big rock that fell\nyou then run to the giant rock. it was a metiorite"
+					)
+					sit5 = (input("will you pick it up y/n"))
+					if sit5 == "y":
+						print(
+						    "you pick up the meteorite and the merchant sees you with the rock he tells you that he will give you the real silver stick for it"
+						)
+						sit5b = (input("will you give it to him y/n"))
+						if sit5b == "y":
+							print(
+							    "you take the silver stick and then go to the next village over\na wizard was there willing to teach anyone how to use a attack magic"
+							)
+						sit6 = (input("do you want to learn it y/n"))
+						if sit6 == "y":
+							print(
+							    "it took you a while put you did it you have learned how to\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+						elif sit6 == "n":
+							print(
+							    "you then went back to your avanture\nbut you then heard someone yell for help\nyou run and try to save them but was not able it was to late\nyou then went back to your aventure but regret not learning the spell to save them\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+						elif sit5b == "n":
+							print(
+							    "you did not take it you then died from the dragon because you had no stronge enough weapon to move on"
+							)
+					elif sit5 == "n":
+						print(
+						    "you dont pick up the rock so you left it you then hear someone yell for hlpe you run back to where the rock was.\nyou saw the merchant but it was to late he was eaten by this unknown being\nhe then attacks you"
+						)
+						#add monster fight
+						print(
+						    "you have obtain the real silver stick then you went to the next village over\na wizard was there willing to teach anyone how to use a attack magic"
+						)
+						sit6 = (input("do you want to learn it y/n"))
+						if sit6 == "y":
+							print(
+							    "it took you a while put you did it you have learned how to\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+						elif sit6 == "n":
+							print(
+							    "you then went back to your avanture\nbut you then heard someone yell for help\nyou run and try to save them but was not able it was to late\nyou then went back to your aventure but regret not learning the spell to save them\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+				elif sit4 == "n":
+					print("you dont take the stick then go on with your life")
+					print(
+					    "you take the stick an go with you life\nThere is a big rock that fell\nyou then run to the giant rock. it was a metiorite"
+					)
+					sit5 = (input("will you pick it up y/n"))
+					if sit5 == "y":
+						print(
+						    "you pick up the meteorite and the merchant sees you with the rock he tells you that he will give you the real silver stick for it"
+						)
+						sit5b = (input("will you give it to him y/n"))
+						if sit5b == "y":
+							print(
+							    "you take the silver stick and then go to the next village over\na wizard was there willing to teach anyone how to use a attack magic"
+							)
+						sit6 = (input("do you want to learn it y/n"))
+						if sit6 == "y":
+							print(
+							    "it took you a while put you did it you have learned how to\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+						elif sit6 == "n":
+							print(
+							    "you then went back to your avanture\nbut you then heard someone yell for help\nyou run and try to save them but was not able it was to late\nyou then went back to your aventure but regret not learning the spell to save them\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+						elif sit5b == "n":
+							print(
+							    "you did not take it you then died from the dragon because you had no stronge enough weapon to move on"
+							)
+					elif sit5 == "n":
+						print(
+						    "you dont pick up the rock so you left it you then hear someone yell for hlpe you run back to where the rock was.\nyou saw the merchant but it was to late he was eaten by this unknown being\nhe then attacks you"
+						)
+						#add monster fight
+						print(
+						    "you have obtain the real silver stick then you went to the next village over\na wizard was there willing to teach anyone how to use a attack magic"
+						)
+						sit6 = (input("do you want to learn it y/n"))
+						if sit6 == "y":
+							print(
+							    "it took you a while put you did it you have learned how to\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+						elif sit6 == "n":
+							print(
+							    "you then went back to your avanture\nbut you then heard someone yell for help\nyou run and try to save them but was not able it was to late\nyou then went back to your aventure but regret not learning the spell to save them\nyou then went back to your avanture\nbut you then heard someone yell for help\nyou run to there rescue and use your new atack magic to save them\nAfter you save them they gave you a thank you gift the GOLDEN STICK!!!\nyou then resume back to your aventure and get to the royal city\nyou have made it to the royal city but a giant dragon has fly over the city trying to destroy it\nthe dragon is ontop of the legendary stick you try to take it off the ground but it said the chosen one can only take it our of the ground\neveryone is yelling for a hero to help defeat the dragon"
+							)
+							sit7 = (input("will you help y/n"))
+							if sit7 == "y":
+								print("you go fight the evil dragon")
+								#add monster fight
+								print(
+								    "you have defeated the dragon\n the dragon body falls onto the legendary stick it came out of the ground you then take the stick\nyou have obtain the LEGENDARY STICK!!!\neveryone cheers and the king has come to thank you\nyou have earn a medel "
+								)
+								sit8 = (input(
+								    "but the king is concern that you have just prolong there lives not save just yet because the cruel bahamut is almost coming they need a hero that will save them from that beast will you be the one ti save them from this evil beast y/n"
+								))
+								if sit8 == "y":
+									print(
+									    "the king says thank you and bless you good well and hopes for you to defeat the bahamut\nyou set on an aventure to find this bahamut with a large army\nyou have made it to bahamut layer\nTHE BAHAHAHAMUTH IS HERE ITS TIME IT TIME TO FIGHT THE EVIL BAHAMUT"
+									)
+								elif sit8 == "n":
+									print(
+									    "you don't fight the bahamut people start to see you as weak you did not want to live at the royal city anymore so you went to a old village far away and had a family you then heard that the bahamut"
+									)
+									#add monster fight
+									print(
+									    "you have defeated the bahamut and the world is saved"
+									)
+							elif sit7 == "n":
+								print(
+								    "You don't fight the dragon but run away the dragon destroy the city everyone is in poverty people start to steal your things you have nothing you die from starvation.\nGood job hero you saved no one you will be known as a useless hero"
+								)
+								break
+
+		else:
+			print(
+			    "you type some weird error cause the world to be corrupted you died due to unknown causes"
+			)
+			break
+	else:
+		print("there was an error the game crash you died try again")
+		break
